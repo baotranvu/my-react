@@ -1,0 +1,69 @@
+
+
+table{
+    display: table;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: var(--secondary-dark-blue) ;
+    border-collapse: collapse;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #121212;
+}
+
+thead{
+    display: table-header-group;
+    background-color: var(--primary-dark-blue);
+    vertical-align: middle;
+    border-color: inherit;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;   
+    color: #fff;
+}
+thead > tr{
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;  
+}
+tbody{
+    background: whitesmoke;
+}
+
+tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+tr:last-child{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+tbody > tr:nth-child(odd){
+    background-color: 	#ececec;
+}
+tr:first-child > th:first-child{
+    border-top-left-radius: 10px;
+}
+tr:first-child > th:last-child{
+    border-top-right-radius: 10px;
+}
+tbody > tr:last-child{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+tbody > tr:last-child > td:first-child{
+    border-bottom-left-radius: 10px;
+}
+tbody > tr:last-child > td:last-child{
+    border-bottom-right-radius: 10px;
+}
+tr:hover{
+    background-color: var(--secondary-dark-blue) !important;
+    color: white;
+}
+

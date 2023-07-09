@@ -1,20 +1,17 @@
-import React from 'react'
+
 import ReactDOM from 'react-dom/client'
-
-
+//import boststrap
 import 'bootstrap/dist/css/bootstrap.min.css';
-import $ from 'jquery';
-import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+//impot firebase
+import { FIRE_BASE_CONFIG } from '@/config/constant';
+import { initializeApp } from 'firebase/app';
+
+import {App} from './App';
+
+initializeApp(FIRE_BASE_CONFIG);
 
 
-import AppHeader from './modules/core/components/AppHeader';
-import UserTable from './modules/user/pages';
-
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <AppHeader/>
-    <UserTable component="UserTable" />
-  </React.StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+    <App componentId="root" />
+);
